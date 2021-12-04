@@ -8,6 +8,8 @@ public class PlayerAnimator : MonoBehaviour
 
     private Animator _animator;
 
+    public int Direction => _playerSprite.flipX ? -1 : 1;
+
     private void Awake()
     {
         _animator = GetComponent<Animator>();
@@ -20,11 +22,23 @@ public class PlayerAnimator : MonoBehaviour
     {
         var value = RoundDirection(direction);
         _animator.SetInteger("direction", value);
-        FlipSprite(direction);
+        _playerSprite.flipX = FlipSprite(direction);
     }
-    private void FlipSprite(float direction)
+    private bool FlipSprite(float direction)
     {
-        _playerSprite.flipX = direction < 0;
+        switch (direction)
+        {
+            case 1:
+                return false;
+            case -1:
+                return true;
+            default:
+              return _playerSprite.flipX;
+        }
+    }
+    private void CurretSide()
+    {
+        
     }
     private int RoundDirection(float direction)
     {

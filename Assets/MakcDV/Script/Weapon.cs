@@ -6,15 +6,19 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [SerializeField] private Stats _stats;
+    [SerializeField] private AudioClip _fire;
     [SerializeField] private Transform weaponAnchor;
     [SerializeField] private Controller _controller;
-    [SerializeField] private AudioClip _fire;
+    [SerializeField] private GameObject _projectileObject;
+    [SerializeField] private PlayerAnimator _playerAnimator;
 
+    private Projectile _projectile;
     private AudioSource _source;
 
     private void Awake()
     {
         _source = GetComponent<AudioSource>();
+ 
     }
     private void OnEnable()
     {
@@ -24,19 +28,23 @@ public class Weapon : MonoBehaviour
     {
         _controller.ShootEvent -= ShootProjectile;
     }
+
     private void ShootProjectile()
     {
         if (_stats.GetBulletsCount() > 0)
         {
-            GameObject projectile = PoolManager.Instance.PojectilePool.GetPooledObject();
-            projectile.transform.position = weaponAnchor.position;
-
-            projectile.transform.rotation = weaponAnchor.rotation;
-            if (gameObject.transform.localScale.x < 0)
-                projectile.transform.Rotate(projectile.transform.up, 180f);
-            projectile.SetActive(true);
+            var projectileObject = Instantiate(_projectileObject, weaponAnchor.position, Quaternion.identity);
+            var projectile = projectileObject.GetComponent<Projectile>();
             _stats.IncreaseOneBullet();
-            _source.PlayOneShot(_fire);
+            if (projectile != null)
+            {
+                projectile.StarMoving(_playerAnimator.Direction);
+                _source.PlayOneShot(_fire);
+            }
+            else
+            {
+                throw new System.NullReferenceException();
+            }
         }
     }
 }

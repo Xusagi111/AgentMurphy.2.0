@@ -5,58 +5,27 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [Header("Set in Inspector")]
+    [SerializeField] private float _timeDestroy;
     [SerializeField] float speed;
     [SerializeField] float worldBorder;
+
     Rigidbody2D rigid2D;
 
     private void Awake()
     {
+        Destroy(gameObject, _timeDestroy);
         rigid2D = GetComponent<Rigidbody2D>();
     }
-
-    private void OnEnable()
+    public void StarMoving(float direction)
     {
-        StarMoving();
+        rigid2D.velocity = transform.right * speed * direction;
     }
-
-    private void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-
-    }
-
-    void StarMoving()
-    {
-        rigid2D.velocity = transform.right * speed;
-    }
-
-    bool isOutWorldBorders() //TODO move to Camera controller
-    {
-        if (Mathf.Abs(transform.position.x) > worldBorder)
-            return true;
-        else
-            return false;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.GetComponent<ITransformable>() != null)
+        if (collision.GetComponent<ITransformable>() != null)
         {
-            collision.gameObject.GetComponent<ITransformable>().HandleTransforming();
-            DestroyProjectile();
+            collision.GetComponent<ITransformable>().HandleTransforming();
+            Destroy(gameObject);
         }
-        
-        //if (collision.gameObject.GetComponent<IDamagable>() != null)
-        //{
-        //    foreach (IDamagable damagable in collision.gameObject.GetComponents<IDamagable>())
-        //    {
-        //        damagable.Damage();
-        //        DestroyProjectile();
-        //    }
-        //}
-    }
-
-    void DestroyProjectile()
-    {
-        PoolManager.Instance.PojectilePool.ReturnObjectToPool(gameObject);
     }
 }

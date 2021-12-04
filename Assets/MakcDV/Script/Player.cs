@@ -10,13 +10,11 @@ public class Player : MonoBehaviour
     [SerializeField] private Controller _controller;
     [SerializeField] private JumpAnimation _jumpAnimation;
 
-    private PhysicMovement _movement;
     private IJump _playerJump;
+    private PhysicMovement _movement;
 
     public delegate void PlayerEvent();
     public PlayerEvent PlayerEventAction;
-
-    public bool IsGround => CheakGround(); 
 
     private void Awake()
     {
@@ -40,8 +38,5 @@ public class Player : MonoBehaviour
         if (PlayerEventAction != null)
             PlayerEventAction();
     }
-    private bool CheakGround()
-    {
-        return true;
-    }
+
 }
