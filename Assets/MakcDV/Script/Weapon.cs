@@ -12,7 +12,6 @@ public class Weapon : MonoBehaviour
     [SerializeField] private GameObject _projectileObject;
     [SerializeField] private PlayerAnimator _playerAnimator;
 
-    private Projectile _projectile;
     private AudioSource _source;
 
     private void Awake()
