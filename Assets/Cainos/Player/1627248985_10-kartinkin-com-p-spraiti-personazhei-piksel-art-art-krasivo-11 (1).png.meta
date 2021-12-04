@@ -1,0 +1,508 @@
+fileFormatVersion: 2
+guid: af58cdad92f0fb74681e8a0a67e2d94c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6968093254100370797
+    second: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+      (1)_0
+  - first:
+      213: -4967387155466362214
+    second: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+      (1)_1
+  - first:
+      213: 8987199133808039350
+    second: Player
+  - first:
+      213: -7618955717332267824
+    second: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+      (1)_3
+  - first:
+      213: 7340656307497163327
+    second: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+      (1)_4
+  - first:
+      213: 632308283801638962
+    second: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+      (1)_5
+  - first:
+      213: -4926478627570949038
+    second: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+      (1)_6
+  - first:
+      213: 1065165334922266910
+    second: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+      (1)_7
+  - first:
+      213: -7619876574401141918
+    second: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+      (1)_8
+  - first:
+      213: 1681868662328145423
+    second: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+      (1)_9
+  - first:
+      213: 7046414615629436581
+    second: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+      (1)_10
+  - first:
+      213: -7748075654117542679
+    second: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+      (1)_11
+  - first:
+      213: -5247696533121633158
+    second: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+      (1)_12
+  - first:
+      213: -8041743894004298927
+    second: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+      (1)_13
+  - first:
+      213: 3210612854018192842
+    second: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+      (1)_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+        (1)_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 869
+        width: 187
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a3d8b9a1c5c4f90800000000000000
+      internalID: -6968093254100370797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+        (1)_1
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 847
+        width: 187
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92e69053bb401bb0800000000000000
+      internalID: -4967387155466362214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 847
+        width: 176
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b59358fef1f8bc70800000000000000
+      internalID: 8987199133808039350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+        (1)_3
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 869
+        width: 187
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc8afc5428044690800000000000000
+      internalID: -7618955717332267824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+        (1)_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 594
+        width: 187
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a599ae4004fd560800000000000000
+      internalID: 7340656307497163327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+        (1)_5
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 572
+        width: 187
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2389884b80966c800800000000000000
+      internalID: 632308283801638962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+        (1)_6
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 572
+        width: 176
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25464123ac1a1abb0800000000000000
+      internalID: -4926478627570949038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+        (1)_7
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 308
+        width: 143
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e190a178a3a38ce00800000000000000
+      internalID: 1065165334922266910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+        (1)_8
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 297
+        width: 154
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263ef7e90a2c04690800000000000000
+      internalID: -7619876574401141918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+        (1)_9
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 297
+        width: 154
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f063ee033a2375710800000000000000
+      internalID: 1681868662328145423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+        (1)_10
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 308
+        width: 143
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a696b862c4e9c160800000000000000
+      internalID: 7046414615629436581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+        (1)_11
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 22
+        width: 143
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4b87f5e3e497490800000000000000
+      internalID: -7748075654117542679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+        (1)_12
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 11
+        width: 154
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a747c3e7ecf6c27b0800000000000000
+      internalID: -5247696533121633158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+        (1)_13
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 11
+        width: 154
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b053f098cf56090800000000000000
+      internalID: -8041743894004298927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1627248985_10-kartinkin-com-p-spraiti-personazhei-piksel-art-art-krasivo-11
+        (1)_14
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 22
+        width: 143
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5be0351636e8c20800000000000000
+      internalID: 3210612854018192842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
