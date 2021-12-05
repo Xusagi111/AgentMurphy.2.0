@@ -32,8 +32,7 @@ public class AndroidController : Controller
 
     private void CheakJump()
     {
-
-        if (_jostick.Direction.y > 0.9f && JumpEvent!=null)
+        if (_jostick.Direction.y > 0.8f && JumpEvent!=null)
         {
             JumpEvent();
         }
