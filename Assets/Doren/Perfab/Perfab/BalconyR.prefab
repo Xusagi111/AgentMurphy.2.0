@@ -206,7 +206,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8011454606060995088}
-  - component: {fileID: 7429305531395226878}
+  - component: {fileID: 5985573457941841940}
   m_Layer: 6
   m_Name: Balcon (7)
   m_TagString: Untagged
@@ -222,13 +222,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9081776969608758182}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.138, y: 1.7797565, z: 30.150547}
+  m_LocalPosition: {x: -20.138, y: 1.84, z: 30.150547}
   m_LocalScale: {x: 0.42371333, y: 0.70873487, z: 0.65171003}
   m_Children: []
   m_Father: {fileID: 2812198317931463762}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &7429305531395226878
+--- !u!61 &5985573457941841940
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -237,11 +237,11 @@ BoxCollider2D:
   m_GameObject: {fileID: 9081776969608758182}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 99934e0744c89d848a29a91fb6344b2c, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.68}
+  m_Offset: {x: -0.33, y: -1.82}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -252,5 +252,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.62, y: 0.49}
+  m_Size: {x: 8.15, y: 0.56}
   m_EdgeRadius: 0
