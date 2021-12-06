@@ -10,15 +10,5 @@ public class Resource : MonoBehaviour
     };
 
     [SerializeField] Resources resourceType;
-    [SerializeField] string playerTag = "Player";
-    [SerializeField] Stats playerStats;
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == playerTag)
-        {
-            Destroy(gameObject);
-            playerStats.PlusOneBullet();
-        }
-    }
 }

@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] private int _speedMovement;
     [SerializeField] private Controller _controller;
     [SerializeField] private JumpAnimation _jumpAnimation;
+    [SerializeField] private Stats _playerStats;
 
     private IJump _playerJump;
     private PhysicMovement _movement;
@@ -38,5 +39,12 @@ public class Player : MonoBehaviour
         if (PlayerEventAction != null)
             PlayerEventAction();
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.GetComponent<Resource>() !=null )
+        {
+            _playerStats.PlusOneBullet();
+            Destroy(collision.gameObject);
+        }
+    }
 }

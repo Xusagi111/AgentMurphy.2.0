@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxObject: 1
-  spawnObject: {fileID: 2646111220550636567, guid: 1287def1b52b0114185eb89edf89aff5, type: 3}
+  spawnObject: {fileID: 8571726575770531540, guid: 2fdcccf77cba9e34a881963ecd9974b6, type: 3}
 --- !u!1 &8848272932136871011
 GameObject:
   m_ObjectHideFlags: 0
