@@ -40,6 +40,7 @@ public class KiryaGameManager : MonoBehaviour
             InvokeEvent(GameState.Win);
         }
     }
+
     private void LoseGame()
     {
         Time.timeScale = 0;
@@ -52,14 +53,21 @@ public class KiryaGameManager : MonoBehaviour
         if(off !=null)
             off.OnChooseMode(false);
     }
-    public void PauseGame()
-    {
-        InvokeEvent(GameState.Pause);
-        Time.timeScale = 0;
-    }
     private void InvokeEvent(GameState state)
     {
         if (GameEventAction != null)
             GameEventAction(state);
     }
+
+    public void PauseGame()
+    {
+        InvokeEvent(GameState.Pause);
+        Time.timeScale = 0;
+    }
+    public void RunGame()
+    {
+        Time.timeScale = 1;
+        InvokeEvent(GameState.Run);
+    }
+
 }
