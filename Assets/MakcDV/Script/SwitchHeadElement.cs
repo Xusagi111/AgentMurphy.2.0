@@ -43,11 +43,13 @@ public class SwitchHeadElement : MonoBehaviour
     {
         group.alpha = 0;
         group.interactable = false;
+        group.blocksRaycasts = false;
     }
     public void TurnOnCanvas(CanvasGroup group)
     {
         group.alpha = 1;
         group.interactable = true;
+        group.blocksRaycasts = true;
     }
     private void ReturnGame()
     {
