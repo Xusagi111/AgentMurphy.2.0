@@ -4,12 +4,35 @@ using UnityEngine;
 
 public class bagAttack : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    [SerializeField] Animator Animdead;
+    private Player player;
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            collision.GetComponent<Player>().InvokeDeadEvent();
+            player = null;
+            Debug.Log("Exit");
+        }
+            
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+        if (collision.tag == "Player")
+        {
+            Debug.Log("Enter");
+            Animdead.SetBool("Punch", true );
+            player = collision.GetComponent<Player>();
             GetComponentInParent<EnemyController>().CloseAttack();
         }
     }
+    public  void  deadPlayerp()
+    { if(player != null)
+        {
+            player.InvokeDeadEvent();
+            Debug.Log("Dead");
+        }  
+    }
+
 }
