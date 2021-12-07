@@ -8,8 +8,6 @@ public class AIStatePatrol : AIState
 
     public override void OnStateEnter()
     {
-
-
     }
 
     public override void OnStateExit(AIState newState)
@@ -20,24 +18,15 @@ public class AIStatePatrol : AIState
     public override void StateUpdate()
     {
         bot.Move();
-
         if (bot.IfPlayerVisible())
         {
-            Debug.Log("StatePatrol: PlayerVisible");
             OnStateExit(new AIStatePersuit(bot));
             return;
         }
-
-/*        if (Random.Range(0f, 1f) <= bot.IdleStateChance)
-        {
-            OnStateExit(new AIStateIdle(bot));
-            return;
-        }*/
     }
 
     public override void HandleTurnPointEnter()
     {
         OnStateExit(new AIStateIdle(bot));
-        //bot.TurnArount();
     }
 }

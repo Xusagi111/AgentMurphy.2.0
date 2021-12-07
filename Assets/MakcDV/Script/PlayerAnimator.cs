@@ -3,6 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class PlayerAnimator : MonoBehaviour
 {
+    [SerializeField] private float _fakeShootProbility;
     [SerializeField] private Controller _controller;
     [SerializeField] private SpriteRenderer _playerSprite;
 
@@ -12,7 +13,21 @@ public class PlayerAnimator : MonoBehaviour
 
     private void Awake()
     {
+        _fakeShootProbility = Mathf.Clamp01(_fakeShootProbility);
         _animator = GetComponent<Animator>();
+
+    }
+    private void OnEnable()
+    {
+        _controller.ShootEvent += ShootAnimation;
+    }
+    private void OnDisable()
+    {
+        _controller.ShootEvent -= ShootAnimation;
+    }
+    private void Start()
+    {
+
     }
     private void Update()
     {
@@ -23,6 +38,7 @@ public class PlayerAnimator : MonoBehaviour
         var value = RoundDirection(direction);
         _animator.SetInteger("direction", value);
         _playerSprite.flipX = FlipSprite(direction);
+        _animator.SetBool("isRight",_playerSprite.flipX);
     }
     private bool FlipSprite(float direction)
     {
@@ -33,12 +49,8 @@ public class PlayerAnimator : MonoBehaviour
             case -1:
                 return true;
             default:
-              return _playerSprite.flipX;
+                return _playerSprite.flipX;
         }
-    }
-    private void CurretSide()
-    {
-        
     }
     private int RoundDirection(float direction)
     {
@@ -49,7 +61,26 @@ public class PlayerAnimator : MonoBehaviour
         return 0;
     }
 
-
+    private void ShootAnimation()
+    {
+        float probillity = Random.Range(0f, 1f);
+        if (_fakeShootProbility >= probillity)
+        {
+            FakeShootState(true);
+        }
+        else
+        {
+            _animator.SetTrigger("shooted");
+        }
+    }
+    private void OnStopFakeShoot()
+    {
+        FakeShootState(false);
+    }
+    private void FakeShootState(bool value)
+    {
+        _animator.SetBool("fakeShoot", value);
+    }
     public void AnimateShoot()
     {
         _animator.SetTrigger("Shooted");

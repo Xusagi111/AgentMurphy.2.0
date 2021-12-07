@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Controller _controller;
     [SerializeField] private JumpAnimation _jumpAnimation;
     [SerializeField] private Stats _playerStats;
+ 
 
     private IJump _playerJump;
     private PhysicMovement _movement;
@@ -25,6 +26,7 @@ public class Player : MonoBehaviour
     private void OnEnable()
     {
         _controller.JumpEvent += _playerJump.Jump;
+    
     }
     private void OnDisable()
     {
