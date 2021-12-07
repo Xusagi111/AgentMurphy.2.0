@@ -4,25 +4,15 @@ using UnityEngine;
 
 public class ObjectToTransformate : MonoBehaviour, ITransformable
 {
-    [SerializeField]int objectType;
-    System.Random random = new System.Random(System.DateTime.Now.Millisecond);
-    public void HandleTransforming()
+    private GameObject currentTransformableObjeckt;
+    public void HandleTransforming(GameObject gameObjectR)
     {
-        int x = random.Next(0, KiryaGameManager.transformablObjects.Length);
-        if (objectType == 1)
+        if(currentTransformableObjeckt !=null)
         {
-            KiryaGameManager.Instance.EnemiesCount--;
+            Destroy(currentTransformableObjeckt);
         }
-        while(x == objectType)
-        {
-            x = random.Next(0, 3);
-        }
-        if (x == 1)
-        {
-            KiryaGameManager.Instance.EnemiesCount++;
-        }
-        GameObject newObject = Instantiate(KiryaGameManager.transformablObjects[x]).gameObject;
-        newObject.transform.position = transform.position;
-        Destroy(gameObject);
+            
+        currentTransformableObjeckt = Instantiate(gameObjectR, gameObjectR.transform.position, Quaternion.identity).gameObject;
+        currentTransformableObjeckt.transform.position = transform.position; 
     }
 }

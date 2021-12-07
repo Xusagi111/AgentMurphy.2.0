@@ -8,8 +8,11 @@ public class Projectile : MonoBehaviour
     [SerializeField] private float _timeDestroy;
     [SerializeField] float speed;
     [SerializeField] float worldBorder;
-
     Rigidbody2D rigid2D;
+    public GameObject[] transformableObjects;
+    [SerializeField] int objectType;
+    System.Random random = new System.Random(System.DateTime.Now.Millisecond);
+    
 
     private void Awake()
     {
@@ -24,8 +27,17 @@ public class Projectile : MonoBehaviour
     {
         if (collision.GetComponent<ITransformable>() != null)
         {
-            collision.GetComponent<ITransformable>().HandleTransforming();
+            collision.GetComponent<ITransformable>().HandleTransforming(Randomtransforn());
             Destroy(gameObject);
         }
     }
+    private GameObject Randomtransforn()
+    {
+        int x = random.Next( transformableObjects.Length);
+        while (x == objectType)
+        {
+            x = random.Next(0, 3);
+        }
+        return transformableObjects[x];
+    } 
 }

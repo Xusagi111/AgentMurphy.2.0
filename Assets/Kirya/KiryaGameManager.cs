@@ -11,11 +11,8 @@ public class KiryaGameManager : MonoBehaviour
 
     public delegate void GameEvent(GameState state);
     public event GameEvent GameEventAction;
-
-    public ObjectToTransformate[] transformableObjects;
-    public static ObjectToTransformate[] transformablObjects;
     public int EnemiesCount;
-    public static KiryaGameManager Instance;
+    
 
     private void OnEnable()
     {
@@ -26,9 +23,7 @@ public class KiryaGameManager : MonoBehaviour
         _player.PlayerEventAction -= LoseGame;
     }
     private void Start()
-    {
-        Instance = this;
-        transformablObjects = transformableObjects;
+    {     
         Time.timeScale = 1;
     }
 

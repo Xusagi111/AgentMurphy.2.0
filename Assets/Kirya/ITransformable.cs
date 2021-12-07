@@ -1,4 +1,5 @@
+using UnityEngine;
 public interface ITransformable
 {
-    void HandleTransforming();
+    void HandleTransforming(GameObject gameObject);
 }
