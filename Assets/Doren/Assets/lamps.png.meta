@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: f4c07c77c0f28574b8d340d08440d4d7
+guid: ab0e9e3947986f14fb550d322851d89f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8816422387918611026
-    second: trees1_0
+      213: 7709045187503265501
+    second: lamps_0
   - first:
-      213: -2553031842317297433
-    second: trees1_1
+      213: -7133718690516275112
+    second: lamps_1
   - first:
-      213: -5940372436918035201
-    second: trees1_2
+      213: -5202589402833740621
+    second: lamps_2
   - first:
-      213: 5024671422037519161
-    second: trees1_3
+      213: -2410901812387134227
+    second: lamps_3
+  - first:
+      213: -5368408502049740407
+    second: lamps_4
+  - first:
+      213: -5596519498521824125
+    second: lamps_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: trees1_0
+      name: lamps_0
       rect:
         serializedVersion: 2
-        x: 83
-        y: 722
-        width: 884
-        height: 1202
+        x: 20
+        y: 1638
+        width: 260
+        height: 310
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 252a0bd43793a5a70800000000000000
-      internalID: 8816422387918611026
+      spriteID: dd61196f0c70cfa60800000000000000
+      internalID: 7709045187503265501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees1_1
+      name: lamps_1
       rect:
         serializedVersion: 2
-        x: 1107
-        y: 650
-        width: 762
-        height: 1205
+        x: 345
+        y: 1538
+        width: 491
+        height: 490
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e89a62e01fc19cd0800000000000000
-      internalID: -2553031842317297433
+      spriteID: 8507634a5a0fffc90800000000000000
+      internalID: -7133718690516275112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees1_2
+      name: lamps_2
       rect:
         serializedVersion: 2
-        x: 164
-        y: 108
-        width: 657
-        height: 330
+        x: 880
+        y: 1563
+        width: 441
+        height: 440
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffc9af7fdbe8f8da0800000000000000
-      internalID: -5940372436918035201
+      spriteID: 3bc12eba080bcc7b0800000000000000
+      internalID: -5202589402833740621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees1_3
+      name: lamps_3
       rect:
         serializedVersion: 2
-        x: 1287
-        y: 93
-        width: 634
-        height: 251
+        x: 124
+        y: 428
+        width: 51
+        height: 1190
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,8 +198,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93b6a9759083bb540800000000000000
-      internalID: 5024671422037519161
+      spriteID: de4c15c3391ca8ed0800000000000000
+      internalID: -2410901812387134227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lamps_4
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 242
+        width: 159
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989632219e49f75b0800000000000000
+      internalID: -5368408502049740407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lamps_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 46
+        width: 145
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3843f00fa2b2552b0800000000000000
+      internalID: -5596519498521824125
       vertices: []
       indices: 
       edges: []
