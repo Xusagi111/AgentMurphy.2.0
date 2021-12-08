@@ -37,5 +37,9 @@ public class RandomSpawn : LogicSpawn
                 newList.Add(instateObject);
         }
         _listInstateObject = newList;
+    } 
+    public  void ChoiceDirectionsTraffic()
+    {
+
     }
 }
