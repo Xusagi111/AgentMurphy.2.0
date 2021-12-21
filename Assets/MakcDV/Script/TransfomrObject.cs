@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class TransfomrObject 
 {
+    public string name;
     public Vector3 InstateOffset;
     public GameObject InstateObject;
     public TypeObject Type;

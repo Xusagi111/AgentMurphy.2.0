@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1087904332677363726}
   - component: {fileID: 2284529065181074349}
   - component: {fileID: 5267842295335917533}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7899428670659223510}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.766403, y: 4.034951, z: -20.540451}
+  m_LocalPosition: {x: 20.766403, y: 4.034951, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4679236747767935822}
@@ -57,7 +57,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.19, y: 19.54}
+  m_Size: {x: 4.19, y: 18.42}
   m_EdgeRadius: 0
 --- !u!114 &5267842295335917533
 MonoBehaviour:
@@ -71,7 +71,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079a468bc293d0948988546706880b29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _instateOffset: {x: 9, y: 0, z: 0}
   _type: 1
   _typeTransformable: 1
 --- !u!1001 &4736558929306368923
@@ -147,7 +146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5904858726541060505, guid: ada5d98ef49770d43b64cae11ae03158, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5904858726541060505, guid: ada5d98ef49770d43b64cae11ae03158, type: 3}
       propertyPath: m_StaticEditorFlags
