@@ -1,31 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!61 &6987849647466750556
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1173723138439696898}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 9.02, y: 3.75}
-    newSize: {x: 9.02, y: 3.75}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 9.02, y: 3.75}
-  m_EdgeRadius: 0
 --- !u!1 &7899428670659223510
 GameObject:
   m_ObjectHideFlags: 0
@@ -72,7 +46,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 9.32, y: 3.66}
+  m_Offset: {x: 0, y: 3.66}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -97,6 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079a468bc293d0948988546706880b29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _instateOffset: {x: 9, y: 0, z: 0}
   _type: 1
   _typeTransformable: 1
 --- !u!1001 &4736558929306368923
@@ -124,7 +99,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95805155373205717, guid: ada5d98ef49770d43b64cae11ae03158, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.32
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 95805155373205717, guid: ada5d98ef49770d43b64cae11ae03158, type: 3}
       propertyPath: m_LocalPosition.y
@@ -181,11 +156,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 4154190204435035841, guid: ada5d98ef49770d43b64cae11ae03158, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ada5d98ef49770d43b64cae11ae03158, type: 3}
---- !u!1 &1173723138439696898 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5904858726541060505, guid: ada5d98ef49770d43b64cae11ae03158, type: 3}
-  m_PrefabInstance: {fileID: 4736558929306368923}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4679236747767935822 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 95805155373205717, guid: ada5d98ef49770d43b64cae11ae03158, type: 3}
