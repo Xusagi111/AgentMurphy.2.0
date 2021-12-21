@@ -22,6 +22,8 @@ public class Stats : MonoBehaviour
     }
     public void IncreaseOneBullet()
     {
+        if (bulletsCount <= 0)
+            return;
         bulletsCount--;
         onBulletChange.Invoke(bulletsCount);
     }

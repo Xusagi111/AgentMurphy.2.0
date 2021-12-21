@@ -1,5 +1,7 @@
 using UnityEngine;
 public interface ITransformable
 {
-    void HandleTransforming(GameObject gameObject);
+    public TypeObject Type { get; }
+    public TypeTransformable TypeTransformable { get; }
+    public bool HandleTransforming(TransfomrObject gameObject);
 }

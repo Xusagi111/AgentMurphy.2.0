@@ -136,7 +136,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timeDestroy: 3
   _speed: 15
-  transformableObjects:
-  - {fileID: 4860200239658432252, guid: 0f6b32a4c577863498cfdef85c833a46, type: 3}
-  - {fileID: 8571726575770531540, guid: 2fdcccf77cba9e34a881963ecd9974b6, type: 3}
-  - {fileID: 7899428670659223510, guid: f3a02a2b917c55744a623ada76dd8927, type: 3}
+  _transfomrObjects:
+  - InstateObject: {fileID: 4860200239658432252, guid: 0f6b32a4c577863498cfdef85c833a46, type: 3}
+    Type: 0
+    TypeTransformable: 1
+  - InstateObject: {fileID: 7899428670659223510, guid: f3a02a2b917c55744a623ada76dd8927, type: 3}
+    Type: 1
+    TypeTransformable: 1
+  - InstateObject: {fileID: 8571726575770531540, guid: 2fdcccf77cba9e34a881963ecd9974b6, type: 3}
+    Type: 2
+    TypeTransformable: 1
+  - InstateObject: {fileID: 155033235113346886, guid: c6f417a0998f7cd4195cc058630991f1, type: 3}
+    Type: 3
+    TypeTransformable: 0
+  - InstateObject: {fileID: 2453182090371026380, guid: 64df2355d27ff0543af7559f145bb841, type: 3}
+    Type: 4
+    TypeTransformable: 0
+  - InstateObject: {fileID: 4709748811002829241, guid: b0ec3a0a8c682a342a562af2593fc491, type: 3}
+    Type: 5
+    TypeTransformable: 0
+  - InstateObject: {fileID: 2314439167397553162, guid: 270530aff55c6404ab6858e478098327, type: 3}
+    Type: 6
+    TypeTransformable: 0
+  - InstateObject: {fileID: 4489239906767346248, guid: bbb130098841b3b4f8d2f84f6b01b3fb, type: 3}
+    Type: 6
+    TypeTransformable: 0
+  - InstateObject: {fileID: 3617113161192020038, guid: 2dabc6987c42e08459e008418dd5ce76, type: 3}
+    Type: 6
+    TypeTransformable: 0
