@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class ObjectToTransformate : MonoBehaviour, ITransformable
 {
-    private GameObject currentTransformableObjeckt;
-    public void HandleTransforming(GameObject gameObjectR)
+    public void HandleTransforming(GameObject instateObject)
     {
-        if(currentTransformableObjeckt !=null)
+        if(instateObject != null)
         {
-            Destroy(currentTransformableObjeckt);
+            Debug.Log(instateObject.name);
+            Instantiate(instateObject, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
-            
-        currentTransformableObjeckt = Instantiate(gameObjectR, gameObjectR.transform.position, Quaternion.identity).gameObject;
-        currentTransformableObjeckt.transform.position = transform.position; 
     }
 }

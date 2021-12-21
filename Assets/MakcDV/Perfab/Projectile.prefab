@@ -135,10 +135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeDestroy: 3
-  speed: 10
-  worldBorder: 25
+  _speed: 15
   transformableObjects:
   - {fileID: 4860200239658432252, guid: 0f6b32a4c577863498cfdef85c833a46, type: 3}
   - {fileID: 8571726575770531540, guid: 2fdcccf77cba9e34a881963ecd9974b6, type: 3}
   - {fileID: 7899428670659223510, guid: f3a02a2b917c55744a623ada76dd8927, type: 3}
-  objectType: 0

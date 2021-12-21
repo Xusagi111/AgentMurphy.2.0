@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e56e05f98a6a454f904b89b29089d8f, type: 3}
   m_Name: Inteface
   m_EditorClassIdentifier: 
-  _offValue: -30
+  _offValue: -80
   _key: inteface
   _nameVariable: interface
   _mixer: {fileID: 24100000, guid: c0e527aeb351d88429f1b06e7aa1c238, type: 2}

@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079a468bc293d0948988546706880b29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectType: 0
+  _currentTransformableObject: {fileID: 0}
 --- !u!1 &4911285461815815270
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 079a468bc293d0948988546706880b29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectType: 0
+  _currentTransformableObject: {fileID: 4161865259145322930}
 --- !u!1001 &7508538375704217643
 PrefabInstance:
   m_ObjectHideFlags: 0
