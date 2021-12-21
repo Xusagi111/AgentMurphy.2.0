@@ -13,7 +13,7 @@ public class ObjectToTransformate : MonoBehaviour, ITransformable
         GameObject transformableObject = null;
         if(instateObject != null)
         {
-            Vector3 instatePosition = transform.position + instateObject.InstateOffset;
+            Vector3 instatePosition = new Vector3(transform.position.x, transform.position.y, 0) + instateObject.InstateOffset;
             transformableObject = Instantiate(instateObject.InstateObject, instatePosition, Quaternion.identity);
             OffTrasformate(transformableObject);
             Destroy(gameObject);
