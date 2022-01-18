@@ -9,7 +9,7 @@ public class UIController : Singleton<UIController>
     public UnityEvent JumpClickAction;
     public UnityEvent ShootClickAction;
 
-    [HideInInspector]public static UIController instance;
+    [HideInInspector] public static UIController instance;
 
     [SerializeField] Button jumpButton;
     [SerializeField] Button shootButton;
@@ -19,7 +19,7 @@ public class UIController : Singleton<UIController>
         base.Awake();
         instance = this;
 
-        jumpButton.onClick.AddListener(()=>
+        jumpButton.onClick.AddListener(() =>
         {
             JumpClickAction?.Invoke();
         });

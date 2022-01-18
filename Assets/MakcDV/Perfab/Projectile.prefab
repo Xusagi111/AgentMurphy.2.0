@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7074050791332846881}
   - component: {fileID: -8630545603324453280}
   - component: {fileID: 1821852565609175147}
+  - component: {fileID: 8798075172934649331}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 200
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: f24624bf406950e48a8197911c7e625c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -182,3 +183,20 @@ MonoBehaviour:
     InstateObject: {fileID: 3617113161192020038, guid: 2dabc6987c42e08459e008418dd5ce76, type: 3}
     Type: 6
     TypeTransformable: 0
+  animationSmoke: {fileID: 8798075172934649331}
+--- !u!111 &8798075172934649331
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3857166922742021677}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 72ec9aade94faea4d8f87c56beb41ca5, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 1

@@ -1400,6 +1400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a564cebe0b49834c9313637c34f350c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sceneMixer: {fileID: 0}
   SettingsAnimator: {fileID: 676933734}
   AuthorsAnimator: {fileID: 1464957484}
 --- !u!4 &981749078

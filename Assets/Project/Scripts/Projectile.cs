@@ -9,13 +9,15 @@ public class Projectile : MonoBehaviour
     [SerializeField] private float _timeDestroy;
     [SerializeField] private float _speed;
     [SerializeField] private TransfomrObject[] _transfomrObjects;
+    [SerializeField] private Animation animationSmoke;
 
     private Rigidbody2D _rigidBody;
 
     private void Awake()
     {
+       // var a = animationSmoke = GetComponent<Animation>();
         Destroy(gameObject, _timeDestroy);
-        _rigidBody = GetComponent<Rigidbody2D>();
+        _rigidBody = GetComponent<Rigidbody2D>();    
     }
     public void StarMoving(float direction)
     {
@@ -23,13 +25,17 @@ public class Projectile : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         var hitObject = collision.GetComponent<ITransformable>();
         if (hitObject != null)
         {
+            
+            var b = animationSmoke.playAutomatically;
             var objects = DefineList(_transfomrObjects, hitObject.Type);
             objects = Filtre(hitObject.TypeTransformable,objects);
-            hitObject.HandleTransforming(Randomtransforn(objects));
+            hitObject.HandleTransforming(Randomtransforn(objects));  
             Destroy(gameObject);
+            Debug.Log( "  " + b );
         }
     }
     private List<TransfomrObject> DefineList(TransfomrObject[] arrayObject, TypeObject hitObject)

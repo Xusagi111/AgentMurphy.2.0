@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
+    private AudioSource SoundOfPassigByCar;
     private Rigidbody2D _rb;
     [SerializeField] float speed = 3;
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
         _rb.gravityScale = 0;
-       
+        SoundOfPassigByCar = GetComponent<AudioSource>();
     }
     void FixedUpdate()
     { 
@@ -19,13 +20,21 @@ public class CarController : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if(collision.gameObject.TryGetComponent<Player>(out Player player))
         {
-            Debug.Log("ToDo: add the sound of a passing car ");
+            Debug.Log(player.name); 
+            SoundOfPassigByCar.Play();
         }
         if (collision.gameObject.CompareTag("Edgemap"))
         {
             Destroy(gameObject);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.TryGetComponent<Player>(out Player player))
+        {
+            SoundOfPassigByCar.Stop();
         }
     }
 }
