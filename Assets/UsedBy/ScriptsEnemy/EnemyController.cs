@@ -20,7 +20,7 @@ public class EnemyController : PlayerController
     public bool CouldShoot { get { return couldshoot; }}
     public float IdleStateChance { get { return idleStateChance; } }
 
-    public bagAttack bagAttack;
+    public BagAttack bagAttack;
 
     private Animator enemyAnimator;
 

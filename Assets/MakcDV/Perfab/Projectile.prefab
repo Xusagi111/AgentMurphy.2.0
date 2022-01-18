@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6626982751222531382}
   - component: {fileID: 7074050791332846881}
   - component: {fileID: -8630545603324453280}
+  - component: {fileID: 2345506362503684168}
   - component: {fileID: 1821852565609175147}
   - component: {fileID: 8798075172934649331}
   m_Layer: 0
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 20
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: f24624bf406950e48a8197911c7e625c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -123,6 +124,102 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!82 &2345506362503684168
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3857166922742021677}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1821852565609175147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,50 +237,51 @@ MonoBehaviour:
   _transfomrObjects:
   - name: Enemy
     InstateOffset: {x: 0, y: 0, z: 0}
-    InstateObject: {fileID: 4860200239658432252, guid: 0f6b32a4c577863498cfdef85c833a46, type: 3}
+    InstateObject: {fileID: 5503458992852911573, guid: 5e0ea2bd85f478742ab249965b0afe24, type: 3}
     Type: 0
     TypeTransformable: 1
   - name: Wall
     InstateOffset: {x: 9, y: 0, z: 0}
-    InstateObject: {fileID: 7899428670659223510, guid: f3a02a2b917c55744a623ada76dd8927, type: 3}
+    InstateObject: {fileID: 6193015723912271170, guid: e69f87183bee2e54cba4bcb57e3a2dfe, type: 3}
     Type: 1
     TypeTransformable: 1
   - name: DuctTape
     InstateOffset: {x: 0, y: 0, z: 0}
-    InstateObject: {fileID: 8571726575770531540, guid: 2fdcccf77cba9e34a881963ecd9974b6, type: 3}
+    InstateObject: {fileID: 3351462423063453095, guid: cc57d58f9c3b2ff4aae1bd220533f797, type: 3}
     Type: 2
     TypeTransformable: 1
   - name: Car
     InstateOffset: {x: 0, y: 0, z: 0}
-    InstateObject: {fileID: 155033235113346886, guid: c6f417a0998f7cd4195cc058630991f1, type: 3}
+    InstateObject: {fileID: 1724991711551461032, guid: 9fd1a41745c41474f8dede159e328878, type: 3}
     Type: 3
     TypeTransformable: 0
   - name: Chicken
     InstateOffset: {x: 0, y: 0, z: 0}
-    InstateObject: {fileID: 2453182090371026380, guid: 64df2355d27ff0543af7559f145bb841, type: 3}
+    InstateObject: {fileID: 8891764315832338585, guid: 59afca5c0d56e734690a0ae340045cac, type: 3}
     Type: 4
     TypeTransformable: 0
   - name: Sandwich
     InstateOffset: {x: 0, y: 0, z: 0}
-    InstateObject: {fileID: 4709748811002829241, guid: b0ec3a0a8c682a342a562af2593fc491, type: 3}
+    InstateObject: {fileID: 5240801036448453199, guid: f70828c540c78c7449a373a5491179a2, type: 3}
     Type: 5
     TypeTransformable: 0
   - name: TraficLight
     InstateOffset: {x: 0, y: 0, z: 0}
-    InstateObject: {fileID: 2314439167397553162, guid: 270530aff55c6404ab6858e478098327, type: 3}
+    InstateObject: {fileID: 8803647143368239387, guid: cf7fd4a5ba557134eba816e55caa2307, type: 3}
     Type: 6
     TypeTransformable: 0
   - name: Tank
     InstateOffset: {x: 0, y: 0, z: 0}
-    InstateObject: {fileID: 4489239906767346248, guid: bbb130098841b3b4f8d2f84f6b01b3fb, type: 3}
+    InstateObject: {fileID: 2994493346834512901, guid: 1f8703850f550b74b9c6e06af0535a00, type: 3}
     Type: 6
     TypeTransformable: 0
   - name: RoadSign
     InstateOffset: {x: 0, y: 0, z: 0}
-    InstateObject: {fileID: 3617113161192020038, guid: 2dabc6987c42e08459e008418dd5ce76, type: 3}
+    InstateObject: {fileID: 6325312060278147929, guid: c0e2bbbe5d1d71943aaf3c97784e6d21, type: 3}
     Type: 6
     TypeTransformable: 0
   animationSmoke: {fileID: 8798075172934649331}
+  _transformableSound: {fileID: 1759896242510659450, guid: b3e13aa8e0ee7c743af5dde658d35663, type: 3}
 --- !u!111 &8798075172934649331
 Animation:
   m_ObjectHideFlags: 0

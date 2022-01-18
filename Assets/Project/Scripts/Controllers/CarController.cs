@@ -22,7 +22,6 @@ public class CarController : MonoBehaviour
     {
         if(collision.gameObject.TryGetComponent<Player>(out Player player))
         {
-            Debug.Log(player.name); 
             SoundOfPassigByCar.Play();
         }
         if (collision.gameObject.CompareTag("Edgemap"))

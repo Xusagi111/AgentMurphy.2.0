@@ -20,6 +20,7 @@ public class Point : MonoBehaviour
         if (PointBusy)
             return false;
         _curretObject = Instantiate(spawnObject, transform.position, Quaternion.identity);
+        _curretObject.transform.parent = transform;
         return true;
     }
 }

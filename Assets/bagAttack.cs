@@ -2,17 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bagAttack : MonoBehaviour
+[RequireComponent(typeof(AudioSource))]
+public class BagAttack : MonoBehaviour
 {
-    [SerializeField] Animator Animdead;
+    [SerializeField] private Animator _animator;
+    [SerializeField] private AudioClip _hitSound;
 
-    private Player player;
+    private Player _player;
+    private AudioSource _sourse;
+
+    private void Awake()
+    {
+        _sourse = GetComponent<AudioSource>();
+    }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            player = null;
+            _player = null;
         }
     }
 
@@ -21,17 +29,17 @@ public class bagAttack : MonoBehaviour
         
         if (collision.tag == "Player")
         {
-            Animdead.SetBool("Punch", true );
-            player = collision.GetComponent<Player>();
+            _animator.SetBool("Punch", true );
+            _player = collision.GetComponent<Player>();
             GetComponentInParent<EnemyController>().CloseAttack();
         }
     }
     public  void  deadPlayerp()
-    { 
-        if(player != null)
+    {
+        _sourse.PlayOneShot(_hitSound);
+        if (_player != null)
         {
-            player.InvokeDeadEvent();
+            _player.InvokeDeadEvent();
         }  
     }
-
 }
